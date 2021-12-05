@@ -27,8 +27,11 @@ body {
 .popup {
   margin-left: 20px;
   font-weight: bold;
-  color: #f0145a;
   font-size: 32px;
+  background-color: #f0145a;
+  background-image: linear-gradient(to right, #f0145a 60%, #ef8080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .answer {
   margin-left: 30px;
@@ -37,12 +40,9 @@ body {
   text-transform: uppercase;
   color: #b3b3ba;
 }
-.messenge,
+.input,
 .answer,
-.mail,
-.popup,
-.phone,
-.name {
+.popup {
   margin-top: 0;
   margin-bottom: 20px;
 }
@@ -55,6 +55,20 @@ body {
   background-color: #24a3ff;
   font-size: 14px;
   color: #ffffff;
+}
+
+::placeholder {
+  color: #b3b3ba;
+  font-size: 18px;
+}
+.input {
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  width: 487px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .close {
   position: absolute;
@@ -77,20 +91,6 @@ body {
 }
 .close:after {
   transform: rotate(-45deg);
-}
-::placeholder {
-  color: #b3b3ba;
-  font-size: 18px;
-}
-input,
-.messenge {
-  border-radius: 8px;
-  padding-left: 10px;
-  padding-top: 11px;
-  padding-bottom: 10px;
-  width: 487px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 @font-face {
   font-family: TT Norms;
