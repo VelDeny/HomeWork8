@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 5000px;
+}
+.contact_popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #323264;
+}
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f5f5fa;
+  border-radius: 12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: TT Norms;
+}
+.popup {
+  margin-left: 20px;
+  font-weight: bold;
+  color: #f0145a;
+  font-size: 32px;
+}
+.answer {
+  margin-left: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #b3b3ba;
+}
+.messenge,
+.answer,
+.mail,
+.popup,
+.phone,
+.name {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.bottom {
+  margin-right: 138px;
+  margin-left: 139px;
+  width: 250px;
+  height: 50px;
+  border-radius: 12px;
+  background-color: #24a3ff;
+  font-size: 14px;
+  color: #ffffff;
+}
+.close {
+  position: absolute;
+  right: 22px;
+  top: 22px;
+  left: 487px;
+  bottom: 536px;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 23px;
+  width: 2px;
+  background-color: #f0145a;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+::placeholder {
+  color: #b3b3ba;
+  font-size: 18px;
+}
+input,
+.messenge {
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  width: 487px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@font-face {
+  font-family: TT Norms;
+  src: url(..//fonts/TTNorms-Regular.ttf);
+}
